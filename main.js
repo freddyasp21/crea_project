@@ -1,3 +1,3 @@
-import './assets/scss/index.scss'
+import './assets/src/sass/main.scss'
 
 
