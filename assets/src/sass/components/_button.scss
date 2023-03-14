@@ -1,23 +1,23 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
 
-.cta {
-    color: #fff;
-    background-color: #6558d3;
-    border: none;
-    border-radius: 6px;
-    padding: 12px 20px;
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 22px;
-    display: flex;
-    align-items: center;
-    border: 2px solid #6558d3;
-    text-align: center;
+// .cta {
+//     color: #fff;
+//     background-color: #6558d3;
+//     border: none;
+//     border-radius: 6px;
+//     padding: 12px 20px;
+//     font-size: 2rem;
+//     font-weight: 500;
+//     line-height: 22px;
+//     display: flex;
+//     align-items: center;
+//     border: 2px solid #6558d3;
+//     text-align: center;
 
-    &:hover,
-    &:focus {
-        background-color: #fff;
-        color: #6558d3 !important;
-    }
-}
+//     &:hover,
+//     &:focus {
+//         background-color: #fff;
+//         color: #6558d3 !important;
+//     }
+// }

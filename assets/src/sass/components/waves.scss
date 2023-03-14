@@ -1,27 +1,26 @@
-// *{
-//     // overflow-x: hidden;
-//     // --color1: #6558d3;
-//     // --color2: #7468d7;
-//     // --color3: #8379db;
-// }
+  
+    // --color1: #6558d3;
+    // --color2: #7468d7;
+    // --color3: #8379db;
 
 .bg_color{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     background-color: #6558d3;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    // z-index: -1;
 }
 
 .wave{
-    width: 300%;
+    width: 480rem;
     height: 100%;
     position: absolute;
-    top: 13vh;
+    top: 40vh;
     left: 0;
-    background: url('../../img/pw1.svg');
+    background: url('../img/pw1.svg');
+    z-index: 2;
 }
 
 .w1{
