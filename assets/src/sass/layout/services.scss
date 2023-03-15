@@ -1,0 +1,126 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.services {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2.5rem;
+    gap: 5rem;
+
+    &__container {
+        @include m.tablet {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem
+        }
+
+        @include m.desktop {
+            padding: 0 10rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr)
+        }
+    }
+
+    &__PrinciaplTitle {
+        @include principalTitle;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 16px;
+        box-shadow: 0 30px 30px -25px rgba(#4133B7, .25);
+        padding: 5rem;
+        gap: 5rem;
+
+        @include m.desktop {
+            flex-direction: row;
+            height: 25rem;
+        }
+
+        &:nth-child(2) {
+            display: none;
+
+            @include m.tablet {
+                display: flex;
+            }
+
+            @include m.desktop {}
+        }
+
+        &:nth-child(3) {
+            display: none;
+
+            @include m.desktop {
+                display: flex;
+            }
+        }
+
+        &:nth-child(4) {
+            display: none;
+
+            @include m.desktop {
+                display: flex;
+            }
+        }
+
+        &:nth-child(5) {
+            display: none;
+
+            @include m.desktop {
+                display: flex;
+            }
+        }
+
+        &:nth-child(6) {
+            display: none;
+
+            @include m.desktop {
+                display: flex;
+            }
+        }
+    }
+
+    &__img {
+        width: 50%;
+        @include shadow;
+        @include m.desktop {
+            width: 40%;
+        }
+    }
+
+    &__textContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        @include m.desktop {
+            height: 100%;
+        }
+    }
+
+    &__title {
+        color: v.$primary;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    &__paragraph {
+        font-size: 1.8rem;
+        line-height: 1.8;
+        text-align: justify;
+        color: v.$black;
+        @include m.desktop {
+            display: none;
+        }
+    }
+}

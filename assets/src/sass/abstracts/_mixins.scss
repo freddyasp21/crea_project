@@ -1,37 +1,53 @@
-@use 'variables' as v; 
+@use 'variables' as v;
 
 /** Media Queries **/
 @mixin telefono {
-    @media (min-width: v.$telefono) {
-        @content;
-    }
+  @media (min-width: v.$telefono) {
+    @content;
+  }
 }
+
 @mixin tablet {
-    @media (min-width: v.$tablet) {
-        @content;
-    }
+  @media (min-width: v.$tablet) {
+    @content;
+  }
 }
+
 @mixin desktop {
-    @media (min-width: v.$desktop) {
-        @content;
-    }
+  @media (min-width: v.$desktop) {
+    @content;
+  }
 }
+
 @mixin desktopXL {
-    @media (min-width: v.$desktopxl) {
-        @content;
-    }
+  @media (min-width: v.$desktopxl) {
+    @content;
+  }
+}
+
+@mixin shadow() {
+  filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.2))
+}
+
+@mixin principalTitle {
+  color: v.$primary;
+  font-size: 4rem;
 }
 
 
 @mixin on-event($self: false) {
   @if $self {
+
     &,
     &:hover,
     &:active,
     &:focus {
       @content;
     }
-  } @else {
+  }
+
+  @else {
+
     &:hover,
     &:active,
     &:focus {
