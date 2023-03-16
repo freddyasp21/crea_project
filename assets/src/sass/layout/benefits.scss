@@ -4,31 +4,32 @@
 
 .benefits {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 2.5rem;
     z-index: 200;
+    display: flex;
+    margin-bottom: 10rem;
+    overflow: hidden;
 
     &__container {
-        // flex-direction: column;
-        // align-items: center;
-        // justify-content: center;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        height: 40vh;
+        display: flex;
+        padding-left: 10vw;
+        gap: 10rem;
+        flex-wrap: nowrap;
+        width: 100vw;
 
-        @include m.tablet {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
+        @include m.tablet{
+            padding-left: 7vw;
+            gap: 7.5vw;
+            margin-bottom: 15rem;
+            // width: 200vw;
         }
 
-        @include m.desktop {
-            grid-template-columns: repeat(4, 1fr);
-            gap: 5rem;
-            padding: 0 10rem;
-        }
+         @include m.desktop{
+            padding: 1rem;
+            gap: 1rem;
+            justify-content: space-evenly;
+            width: 100vw;
+         }
     }
 
     &__card {
@@ -40,30 +41,17 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 1.5rem;
-        min-height: 18rem;
+        height: 50vh;
+        width: 80vw;
+        flex-shrink: 0;
 
-        @include m.desktop {
-            flex-direction: column;
-            width: 20rem;
+        @include m.tablet{
+            width: 40vw;
         }
 
-        &:nth-child(2) {
-            display: none;
-
-            @include m.tablet {
-                display: flex;
-            }
-        }
-
-        &:nth-child(3),
-        &:nth-child(4) {
-            display: none;
-
-            @include m.desktop {
-                display: flex;
-            }
-        }
+         @include m.desktop{
+            width: 22vw;
+         }
 
     }
 

@@ -9,8 +9,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 2.5rem;
-    gap: 5rem;
+    // padding: 0 2.5rem;
+    // gap: 5rem;
 
 
 
@@ -46,9 +46,7 @@
     // }
 
     &__image {
-        display: flex;
-        width: 70%;
-        margin: 0 auto;
+        width: 80%;
         @include shadow;
 
         @include m.tablet {

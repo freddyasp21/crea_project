@@ -5,13 +5,13 @@
 .banner {
     background-color: #f3f0f5;
     margin: 15rem 0;
-    width: 100%;
+    width: 100vw;
     height: 20vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 6rem;
+    // padding: 6rem;
 
     @include m.tablet {
         padding: 0;

@@ -1,84 +1,109 @@
   
-    // --color1: #6558d3;
-    // --color2: #7468d7;
-    // --color3: #8379db;
+@use '../abstracts/mixins' as m;
 
 .bg_color{
     width: 100%;
-    height: 70vh;
-    background-color: #6558d3;
+    height: 72vh;
+    background-color: #461d5c;
     position: absolute;
     top: 0;
     left: 0;
-    // z-index: -1;
+    z-index: 5;
+
+    @include m.desktop{
+        height: 73vh;
+    }
+
+    // @include m.desktopXL{
+    //     height: 70vh;
+    // }
 }
 
 .wave{
-    width: 480rem;
-    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    height: 40vh;
     position: absolute;
-    top: 40vh;
+    top: 54vh;
     left: 0;
-    background: url('../img/pw1.svg');
-    z-index: 2;
+    padding: 0;
+
+    @include m.desktop{
+        top: 60vh;
+    }
+}
+
+.waveSVG{
+    max-width: none;
+    height: 100%;
+    width: 100vw;
+    margin: -1px;
 }
 
 .w1{
     animation: w1 7s linear infinite;
+    z-index: 4;
 }
 
 .w2{
-    animation: w2 7s linear -.125s infinite, desplazamiento 7s ease -.125s infinite;
-    opacity: 0.7;
+    animation: w2 7s linear -.125s infinite;
+    z-index: 3;
 }
 .w3{
-    animation: w3 7s linear -.250s infinite, desplazamiento2 7s ease -.250s infinite;
-    opacity: 0.5;
+    animation: w3 7s linear -.150s infinite;
+    z-index: 2;
+}
+.w4{
+    animation: w4 7s linear -.270s infinite;
+    z-index: 1;
 }
 
 @keyframes w1 {
     0%{
-        margin-left: 0;
+        transform: translate(0);
     }
     100%{
-        margin-left: -1600px;
+        transform: translate(-200vw);
     }
 }
 
 @keyframes w2 {
     0%{
-        margin-left: 0;
+        transform: translate(0, 0px);
     }
+
+    50%{
+        transform: translate(-100, 10px);
+    }
+
     100%{
-        margin-left: -1600px;
+        transform: translate(-200vw, 0px);
     }
 }
 
 @keyframes w3 {
     0%{
-        margin-left: 0;
+        transform: translate(0, 0px);
+    }
+
+    50%{
+        transform: translate(-100vw, 15px);
     }
     100%{
-        margin-left: -1600px;
+        transform: translate(-200vw, 0px);
     }
 }
-
-@keyframes desplazamiento {
-    0%, 100%{
-        transform: translateY(10px);
+@keyframes w4 {
+    0%{
+        transform: translate(0, 0px);
     }
 
     50%{
-        transform: translateY(0px);
+        transform: translate(-100vw, 25px);
     }
-}
-
-@keyframes desplazamiento2 {
-    0%, 100%{
-        transform: translateY(15px);
-    }
-
-    50%{
-        transform: translateY(0px);
+    100%{
+        transform: translate(-200vw, 0px);
     }
 }
