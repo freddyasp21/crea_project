@@ -11,17 +11,19 @@ html {
   /* 1rem = 10px */
   font-size: 62.5%;
   scroll-behavior: smooth;
+
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+// *,
+// *::before,
+// *::after {
+//   box-sizing: inherit;
+// }
 
 body {
   font-size: 1.6rem;
   background-color: #f6f6f6;
+
 }
 
 a {
