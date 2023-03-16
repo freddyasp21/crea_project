@@ -8,24 +8,31 @@
     display: flex;
     margin-bottom: 10rem;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10rem;
+    background-color: v.$white;
 
     &__container {
+
         height: 40vh;
         display: flex;
-        padding-left: 10vw;
+        padding: 0 2.5rem;
         gap: 10rem;
         flex-wrap: nowrap;
         width: 100vw;
+        height: 100%;
+        
 
         @include m.tablet{
             padding-left: 7vw;
             gap: 7.5vw;
-            margin-bottom: 15rem;
+            // margin-bottom: 15rem;
             // width: 200vw;
         }
 
          @include m.desktop{
-            padding: 1rem;
+            padding: 5rem 1rem;
             gap: 1rem;
             justify-content: space-evenly;
             width: 100vw;
@@ -41,8 +48,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        height: 50vh;
-        width: 80vw;
+        width: 100%;
         flex-shrink: 0;
 
         @include m.tablet{
@@ -50,7 +56,9 @@
         }
 
          @include m.desktop{
-            width: 22vw;
+            width: 20rem;
+            height: 100%;
+            flex-direction: column;
          }
 
     }
@@ -75,7 +83,7 @@
 
     &__title {
         align-self: start;
-        color: #6558d3;
+        color: v.$primary;
         @include m.desktop {
             text-align: center;
         }
