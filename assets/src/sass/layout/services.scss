@@ -135,6 +135,12 @@
         }
     }
 
+    &__sliderIconContainer{
+        @include m.desktop {
+            display: none;
+        }
+    }
+
     &__icon{
         color: v.$yellow;
     }
