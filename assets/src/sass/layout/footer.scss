@@ -1,0 +1,59 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.footer {
+    width: 100%;
+    height: 40vh;
+    background-color: v.$primary03;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2.5rem;
+    position: relative;
+
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    &__logoImage{
+        width: 40%;
+        @include m.desktop { 
+            width: 10%;
+         }
+    }
+
+    &__linksContainer{
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        @include m.desktop { 
+            gap: 3.5rem;
+         }
+    }
+
+    &__link{
+        font-size: 2.4rem;
+        color: v.$white;
+
+        &:hover,&:focus{
+            color: v.$yellow;
+        }
+    }
+
+    &__terminos{
+        width: 100%;
+        text-align: center;
+        background-color: v.$primary02;
+        color: v.$white;
+        padding: 1rem 0;
+    }
+}

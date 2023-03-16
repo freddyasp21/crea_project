@@ -41,6 +41,7 @@
         box-shadow: 0 30px 30px -25px rgba(#4133B7, .25);
         padding: 5rem;
         gap: 5rem;
+        @include transition;
 
         @include m.desktop {
             flex-direction: row;

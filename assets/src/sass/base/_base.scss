@@ -28,11 +28,7 @@ body {
 
 a {
   text-decoration: none;
-
-  // &:visited {
-  //   color: inherit;
-  // }
-
+  @include transition;
 }
 
 .container {
@@ -107,4 +103,5 @@ img{
 
 button{
   cursor: pointer;
+  @include transition;
 }
