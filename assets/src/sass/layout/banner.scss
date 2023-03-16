@@ -20,6 +20,7 @@
 
     &__image {
         display: flex;
+        width: 50%;
 
         @include m.tablet {
             width: 40%;

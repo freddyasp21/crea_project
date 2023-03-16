@@ -64,7 +64,7 @@
     </div>
   </header>
 
-  <section class="benefits" >
+  <section class="benefits">
     <div class="benefits__container" id="benefits">
       <div class="benefits__card">
         <div class="benefits__cardImageContainer">
@@ -307,39 +307,49 @@
   </section>
 
   <section class="form">
-    <div class="form__container">
-      <div class="form__contentBox">
-        <form action="" class="form__form">
 
-          <h2 class="form__title">Suscribete Para Recibir Más de Nosotros</h2>
+    <div class="form__imageContainer"></div>
+    <form action="" class="form__form">
 
-          <div class="form__campo">
-            <label for="" class="form__label">Nombre y Apellido</label>
-            <input type="text">
-          </div>
+      <h2 class="form__title">Suscribete y Recibe <span>Actualizaciones</span></h2>
 
-          <div class="form__campo">
-            <label for="" class="form__label">Correo</label>
-            <input type="email">
-          </div>
-
-          <div class="form__campo">
-            <select name="Me interesa">
-
-              <option value="">Elegir opción</option>
-
-              <option value="Asesorías">Asesorías</option>
-              
-              <option value="Asesorías">Talleres</option>
-              
-              <option value="Asesorías">Servicios</option>
-              
-              </select>
-          </div>
-
-        </form>
+      <div class="form__field">
+        <label for="" class="form__label">Nombre y Apellido</label>
+        <input class="form__input" type="text">
       </div>
-    </div>
+
+      <div class="form__field">
+        <label for="" class="form__label">Número Teléfonico</label>
+        <input class="form__input" type="tel">
+      </div>
+
+      <div class="form__field">
+        <label for="" class="form__label">Correo</label>
+        <input class="form__input" type="email">
+      </div>
+
+      <div class="form__field form__field--row">
+
+        <label for="" class="form__label">Me interesa:
+        </label>
+        <select name="Me interesa" class="form__select">
+
+          <option value="">Elegir opción</option>
+
+          <option value="Asesorías">Asesorías</option>
+
+          <option value="Asesorías">Talleres</option>
+
+          <option value="Asesorías">Servicios</option>
+
+          <option value="Asesorías">Cotización</option>
+
+        </select>
+      </div>
+
+      <button type="submit" class="form__submit">Enviar</button>
+
+    </form>
   </section>
 
 
