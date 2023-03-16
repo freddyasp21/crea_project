@@ -36,6 +36,7 @@
         align-items: center;
         justify-content: center;
         background-color: #fff;
+        border: 2px solid v.$white;
         border-radius: 16px;
         box-shadow: 0 30px 30px -25px rgba(#4133B7, .25);
         padding: 5rem;
@@ -44,6 +45,13 @@
         @include m.desktop {
             flex-direction: row;
             height: 25rem;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: v.$yellow;
+            border: 2px solid v.$yellow;
+            color: v.$white;
         }
 
         &:nth-child(2) {
@@ -92,6 +100,7 @@
     &__img {
         width: 50%;
         @include shadow;
+
         @include m.desktop {
             width: 40%;
         }
@@ -120,8 +129,19 @@
         line-height: 1.8;
         text-align: justify;
         color: v.$black;
+
         @include m.desktop {
             display: none;
         }
+    }
+
+    &__sliderIconContainer{
+        @include m.desktop {
+            display: none;
+        }
+    }
+
+    &__icon{
+        color: v.$yellow;
     }
 }
