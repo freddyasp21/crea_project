@@ -27,12 +27,13 @@
         align-items: center;
         justify-content: center;
         padding: 5rem;
-        gap: 5rem;
+        gap: 2rem;
         border-radius: 16px;
         box-shadow: 0 30px 30px -25px rgba(#4133B7, .25);
         height: 100%;
         @include m.desktop { 
             height: 85%;
+            gap: 5rem;
          }
     }
 
