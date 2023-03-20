@@ -21,6 +21,10 @@
     &__image {
         display: flex;
         width: 50%;
+        background-color: v.$white;
+        padding: 1rem;
+        border-radius: 16px;
+        box-shadow: 0 30px 30px -25px rgba(#4133B7, .25);
 
         @include m.tablet {
             width: 40%;
